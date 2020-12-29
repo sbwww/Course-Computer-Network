@@ -1,0 +1,7 @@
+*.doc
+*.docx
+
+*.rar
+*.zip
+
+.vscode
