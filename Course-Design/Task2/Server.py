@@ -1,7 +1,7 @@
+import json
+import queue
 import socket
 import threading
-import queue
-import json
 
 from Parameters.ServerParams import *
 
@@ -38,16 +38,16 @@ class TCP_Server():
 
     # 判断断开用户在users中是第几位并移出列表, 刷新客户端的在线用户显示
     def delUsers(self, conn, addr):
-        a = 0
+        index = 0
         for user in self.users:
             if user[0] == conn:
-                self.users.pop(a)
+                self.users.pop(index)
                 print('剩余在线用户: ')
                 online_list = self.onlines()
                 self.recv(addr, online_list)
                 print(online_list)
                 break
-            a += 1
+            index += 1
 
     # 将接收到的信息存入队列
     def recv(self, addr, data):

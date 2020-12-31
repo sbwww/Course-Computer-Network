@@ -63,9 +63,8 @@ class Chat_UI():
         self.chatter = '群聊'  # 聊天对象, 默认为群聊
 
         self.main_window = main_window
-        self.main_window.title(USERNAME)
         self.main_window.geometry('590x420+320+100')
-        # self.main_window.resizable(0, 0)
+        self.main_window.resizable(0, 0)
 
         # 消息区域
         self.message_aera = ScrolledText(self.main_window)
@@ -109,7 +108,7 @@ class Chat_UI():
         addr = self.my_socket.getsockname()  # 获取客户端ip和端口号
         addr = addr[0] + ':' + str(addr[1])  # SERVER_IP:port
         USERNAME = USERNAME + ' (' + addr + ')'
-        self.main_window.title(USERNAME)
+        self.main_window.title(USERNAME + ' 群聊')
 
         self.my_socket.send(USERNAME.encode())
 
@@ -118,7 +117,7 @@ class Chat_UI():
 
     # 清空按钮事件
     def clear(self, *args):
-        self.message_text.set('')  # 发送后清空文本框
+        self.message_text.set('')
 
     # 发送按钮事件
     def send(self, *args):
@@ -131,17 +130,18 @@ class Chat_UI():
             return False
         msg = USERNAME + ':;' + self.message_entry.get() + ':;' + self.chatter
         self.my_socket.send(msg.encode())
-        self.clear()
+        self.clear()  # 发送后清空文本框
         return True
 
     # 选择聊天对象事件
     def select_chatter(self, *args):
         # 获取点击的索引然后得到内容(用户名)
         index = self.online_users_listbox.curselection()[0]
-        self.chatter = self.online_users_listbox.get(index)
-        if self.chatter == '群聊':
+        if index == 0 or index == 1:
             self.main_window.title(USERNAME + ' 群聊')
+            self.chatter = '群聊'
         else:
+            self.chatter = self.online_users_listbox.get(index)
             self.main_window.title(USERNAME + '  -->  ' + self.chatter)
 
     # 刷新在线列表
@@ -150,14 +150,14 @@ class Chat_UI():
         online_count = ('在线人数: ' + str(len(receive_data)) + ' 人')
         self.online_users_listbox.insert(tkinter.END, online_count)
         self.online_users_listbox.itemconfig(
-            tkinter.END, fg='blue', bg="lightgray")
+            tkinter.END, fg='black', bg="lightgray")
         self.online_users_listbox.insert(tkinter.END, '群聊')
-        self.online_users_listbox.itemconfig(tkinter.END, fg='blue')
+        self.online_users_listbox.itemconfig(tkinter.END, fg='black')
         for data in receive_data:
             self.online_users_listbox.insert(
                 tkinter.END, data)
             self.online_users_listbox.itemconfig(
-                tkinter.END, fg='blue')
+                tkinter.END, fg='black')
 
     # 接收服务端发送的信息
     def recv(self):
@@ -202,3 +202,4 @@ if __name__ == '__main__':
     chat_window = tkinter.Tk()
     chat_ui = Chat_UI(chat_window)
     chat_window.mainloop()
+    chat_ui.__del__()
