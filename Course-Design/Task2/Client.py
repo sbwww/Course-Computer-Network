@@ -12,6 +12,7 @@ from tkinter import messagebox
 
 class Login_UI():
     def __init__(self, main_window):
+        # region UI
         self.main_window = main_window
 
         self.main_window.title('登录')
@@ -45,6 +46,7 @@ class Login_UI():
         login_button.place(x=100, y=100, width=60, height=30)
         # 回车绑定登录功能
         self.main_window.bind('<Return>', self.login)
+        # endregion
 
     # 登录按钮事件
     def login(self, *args):
@@ -57,6 +59,7 @@ class Login_UI():
 
 class Chat_UI():
     def __init__(self, main_window):
+        # region UI
         global USERNAME
         self.online_users_listbox = ''  # 用于显示在线用户的列表框
         self.online_users = []  # 在线用户列表
@@ -100,6 +103,7 @@ class Chat_UI():
         self.send_button = tkinter.Button(
             self.main_window, text='清空', command=self.clear)
         self.send_button.place(x=525, y=375, width=60, height=30)
+        # endregion
 
         self.my_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.my_socket.connect((SERVER_IP, SERVER_PORT))

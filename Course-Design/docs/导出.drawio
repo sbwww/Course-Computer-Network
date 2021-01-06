@@ -1,0 +1,130 @@
+<mxfile host="65bd71144e" modified="2021-01-06T04:49:10.635Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.52.1 Chrome/83.0.4103.122 Electron/9.3.5 Safari/537.36" etag="rvDmdIZtioBoHS3QtThG" version="13.10.0" type="embed">
+    <diagram id="6hGFLwfOUW9BJ-s0fimq" name="Page-1">
+        <mxGraphModel dx="2106" dy="323" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="1" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="488" value="基于SOCKET的&#10;局域网通信系统" style="rounded=0;strokeWidth=2;fontFamily=Times New Roman;" vertex="1" parent="1">
+                    <mxGeometry x="-1153" y="58" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="489" value="启动&#10;服务" style="rounded=0;strokeWidth=2;fontFamily=Times New Roman;verticalAlign=middle;horizontal=1;direction=south;" vertex="1" parent="1">
+                    <mxGeometry x="-1204" y="218" width="40" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="490" value="建立&#10;连接" style="rounded=0;strokeWidth=2;fontFamily=Times New Roman;direction=south;" vertex="1" parent="1">
+                    <mxGeometry x="-1123" y="218" width="40" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="491" value="在线&#10;用户&#10;存储" style="rounded=0;strokeWidth=2;fontFamily=Times New Roman;direction=south;" vertex="1" parent="1">
+                    <mxGeometry x="-1044" y="218" width="41" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="492" value="服务器 Server" style="rounded=0;strokeWidth=2;fontFamily=Times New Roman;" vertex="1" parent="1">
+                    <mxGeometry x="-1153" y="138" width="100" height="39" as="geometry"/>
+                </mxCell>
+                <mxCell id="493" value="" style="endArrow=none;fontFamily=Times New Roman;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;rounded=0;strokeWidth=2;html=1;" edge="1" parent="1" source="491" target="492">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="-973" y="313" as="sourcePoint"/>
+                        <mxPoint x="-923" y="263" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="494" value="" style="endArrow=none;fontFamily=Times New Roman;exitX=0;exitY=0.5;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeWidth=2;html=1;" edge="1" parent="1" source="490" target="492">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="-1013" y="241" as="sourcePoint"/>
+                        <mxPoint x="-1103" y="183" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="495" value="" style="endArrow=none;fontFamily=Times New Roman;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;rounded=0;strokeWidth=2;html=1;" edge="1" parent="1" source="489" target="492">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="-1003" y="251" as="sourcePoint"/>
+                        <mxPoint x="-1084" y="197" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="496" value="消息&#10;收发" style="rounded=0;strokeWidth=2;fontFamily=Times New Roman;verticalAlign=middle;horizontal=1;direction=south;" vertex="1" parent="1">
+                    <mxGeometry x="-963" y="218" width="40" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="497" value="T&#10;C&#10;P&#10;/&#10;I&#10;P" style="rounded=0;strokeWidth=2;fontFamily=Times New Roman;direction=south;" vertex="1" parent="1">
+                    <mxGeometry x="-886" y="218" width="40" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="498" value="" style="endArrow=none;fontFamily=Times New Roman;exitX=0;exitY=0.5;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeWidth=2;html=1;" edge="1" parent="1" source="497" target="501">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="-885" y="231" as="sourcePoint"/>
+                        <mxPoint x="-976" y="167" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="499" value="" style="endArrow=none;fontFamily=Times New Roman;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;rounded=0;strokeWidth=2;html=1;" edge="1" parent="1" source="496" target="492">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="-803" y="241" as="sourcePoint"/>
+                        <mxPoint x="-904" y="167" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="500" value="S&#10;O&#10;C&#10;K&#10;E&#10;T" style="rounded=0;strokeWidth=2;fontFamily=Times New Roman;direction=south;" vertex="1" parent="1">
+                    <mxGeometry x="-809" y="218" width="40" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="501" value="连接" style="rounded=0;strokeWidth=2;fontFamily=Times New Roman;" vertex="1" parent="1">
+                    <mxGeometry x="-916" y="137" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="502" value="" style="endArrow=none;fontFamily=Times New Roman;exitX=0;exitY=0.5;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeWidth=2;html=1;" edge="1" parent="1" source="500" target="501">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="-625" y="231" as="sourcePoint"/>
+                        <mxPoint x="-715" y="173" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="503" value="客户机 Client" style="rounded=0;strokeWidth=2;fontFamily=Times New Roman;" vertex="1" parent="1">
+                    <mxGeometry x="-1390" y="137" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="504" value="用户&#10;登录" style="rounded=0;strokeWidth=2;fontFamily=Times New Roman;verticalAlign=middle;horizontal=1;direction=south;" vertex="1" parent="1">
+                    <mxGeometry x="-1512" y="218" width="40" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="505" value="消息&#10;收发" style="rounded=0;strokeWidth=2;fontFamily=Times New Roman;direction=south;" vertex="1" parent="1">
+                    <mxGeometry x="-1282" y="218" width="40" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="506" value="" style="endArrow=none;fontFamily=Times New Roman;exitX=0;exitY=0.5;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeWidth=2;html=1;" edge="1" parent="1" source="505" target="503">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="-1181" y="230" as="sourcePoint"/>
+                        <mxPoint x="-1272" y="166" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="507" value="" style="endArrow=none;fontFamily=Times New Roman;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;rounded=0;strokeWidth=2;html=1;" edge="1" parent="1" source="504" target="503">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="-1171" y="240" as="sourcePoint"/>
+                        <mxPoint x="-1272" y="166" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="508" value="" style="endArrow=none;fontFamily=Times New Roman;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;rounded=0;strokeWidth=2;html=1;" edge="1" parent="1" source="503" target="488">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="-1193" y="228" as="sourcePoint"/>
+                        <mxPoint x="-1094" y="187" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="509" value="" style="endArrow=none;fontFamily=Times New Roman;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;rounded=0;strokeWidth=2;html=1;" edge="1" parent="1" source="492" target="488">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="-1183" y="238" as="sourcePoint"/>
+                        <mxPoint x="-1084" y="197" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="510" value="" style="endArrow=none;fontFamily=Times New Roman;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;rounded=0;strokeWidth=2;html=1;" edge="1" parent="1" source="501" target="488">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="-1173" y="248" as="sourcePoint"/>
+                        <mxPoint x="-1074" y="207" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="511" value="消息&#10;编辑" style="rounded=0;strokeWidth=2;fontFamily=Times New Roman;verticalAlign=middle;horizontal=1;direction=south;" vertex="1" parent="1">
+                    <mxGeometry x="-1434" y="218" width="40" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="512" value="" style="endArrow=none;fontFamily=Times New Roman;entryX=0.5;entryY=1;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;rounded=0;strokeWidth=2;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="511" target="503">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="-1437" y="129" as="sourcePoint"/>
+                        <mxPoint x="-1293" y="188" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="513" value="聊天&#10;对象&#10;选择" style="rounded=0;strokeWidth=2;fontFamily=Times New Roman;verticalAlign=middle;horizontal=1;direction=south;" vertex="1" parent="1">
+                    <mxGeometry x="-1360" y="218" width="40" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="514" value="" style="endArrow=none;fontFamily=Times New Roman;entryX=0.5;entryY=1;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;rounded=0;strokeWidth=2;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="513" target="503">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="-1360" y="207" as="sourcePoint"/>
+                        <mxPoint x="-1330" y="187" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
